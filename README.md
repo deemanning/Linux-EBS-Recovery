@@ -9,13 +9,14 @@ Use Cases:
  - Full instance recovery
  - Configuration and Application testing
 
-### The following should be completed before any critical changes are applied to the server instance:
+#### The following should be completed before any critical changes are applied to the server instance:
 
 Create a snapshot of each volume attached to the server instance
 
  - Name – Tag the name of the snapshot with an identical name of the server instance
  - Description – Note the purpose of the snapshot (Application Test, Configuration Test, etc... and the drive path “/dev/sda1”) “This make it easier to complete a filter search for the snapshots in the event there are several snapshots present and ensure that you know the drive path during the drive-attach configuration”
-Procedures
+
+##### Procedures
 
 1.Shutdown the server instance from the C2S console by executing “Stop”
 
@@ -33,7 +34,7 @@ After clicking “Create”, take note of the Volume IDs
  
 5.Power on the instance and validate operational status
 
-Clean-Up process:
+#### Clean-Up process:
 
 1.Delete the original EBS volumes that are no longer attached to the server instance
 
